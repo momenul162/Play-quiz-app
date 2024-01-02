@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;1,500&family=Roboto&family=Roboto+Slab&display=swap');
+
+.site-name{
+    font-family: 'Playfair Display', serif;
+}
+
+.nav-element a{
+    color: #be185d;
+    font-weight: 600;
+    font-size: 25px;
+    padding: 0 25px;
+    text-decoration: none;
+    position: relative;
+}
+.nav-element a:hover,
+.nav-element a.active{
+    color: lightpink;
+}
+.nav-element a:hover::after,
+.nav-element a.active::after{
+    content: "";
+    width: 30%;
+    height: 3px;
+    background-color: lightpink;
+    position: absolute;
+    left: 25px;
+    bottom: -3px;
+}
+
+/* set menu icon */
+@media screen and (max-width: 600px) {
+    .menu-icon{
+        display: block;
+        cursor: pointer;
+    }
+    .nav-element{
+        position: absolute;
+        right: 0;
+        top: 50px;
+        width: 0;
+        height: calc(100vh - 60px);
+        transition: all 0.3s case-in;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+    }
+    .nav-element.active{
+        width: 120px;
+        height: 250px;
+        border-radius: 8px;
+        background-color: rgba(240, 237, 237, 0.935);
+    }
+    .nav-element a {
+        margin-right: unset;
+        margin-top: 22px;
+        padding: 0;
+    }
+}

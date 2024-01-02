@@ -1,0 +1,13 @@
+
+.header-container{
+    background-image: url("https://cdn.pixabay.com/photo/2019/05/22/22/28/brainstorm-4222728_1280.jpg");
+    height: 522px;
+    width: 100%;
+    border-radius: 15px;
+}
+.banner{
+    background-color: rgba(213, 196, 165, 0.607);
+    height: 100%;
+    border-radius: 15px;
+    font-weight: bold;
+}
