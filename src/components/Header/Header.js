@@ -22,7 +22,6 @@ const Header = () => {
         <div className={`nav-element ${showNavbar && "active"}`}>
           <NavLink to="/home">Home</NavLink>
           <NavLink to="/statistics">Statistics</NavLink>
-          <NavLink to="/blog">Blog</NavLink>
           <NavLink to="about">About</NavLink>
         </div>
         <div className="menu-icon hidden" onClick={handleNavBar}>

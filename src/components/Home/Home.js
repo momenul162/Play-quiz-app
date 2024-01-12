@@ -23,7 +23,7 @@ const Home = () => {
           </p>
         </div>
       </section>
-      <section className="my-10 md:flex">
+      <section className="my-10 grid md:grid-cols-2 lg:grid-cols-4">
         {topics.data.map((topic) => (
           <Topic key={topic.id} topic={topic}></Topic>
         ))}

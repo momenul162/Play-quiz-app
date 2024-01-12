@@ -5,7 +5,7 @@ const Option = ({ option, userAnswerHandler, id }) => {
     <div className="border py-4 px-6">
       <input
         onChange={(e) => userAnswerHandler(e, id)}
-        className="mr-1"
+        className="mr-1 bg-white"
         type="radio"
         id="chooseOption"
         name="option"
