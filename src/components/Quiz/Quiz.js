@@ -13,15 +13,15 @@ const Quiz = ({ quizs }) => {
       total: userAnswer.length,
     };
 
-    const result = answerSheet.reduce((accumulator, currrent) => {
+    const result = answerSheet.reduce((acc, currrent) => {
       const findAnswer = userAnswer.find((item) => item.id === currrent.id);
 
       if (findAnswer) {
         findAnswer.value === currrent.correctAnswer
-          ? (accumulator.correctAnswer += 1)
-          : (accumulator.wrongAnswer += 1);
+          ? (acc.correctAnswer += 1)
+          : (acc.wrongAnswer += 1);
       }
-      return accumulator;
+      return acc;
     }, initialValue);
     setResult(result);
   };

@@ -2,7 +2,6 @@ import React from "react";
 import Option from "./Option/Option";
 
 const Question = ({ quiz, index, rightAns, userAnswerHandler }) => {
-  console.log(quiz.question);
   return (
     <section className="shadow-lg my-4 py-4">
       <div className="flex mx-2">

@@ -15,9 +15,11 @@ const Header = () => {
     <nav className="navBar relative">
       <div className="container flex justify-between justify-items-center my-6 p-4 shadow-lg">
         <div>
-          <h1 className="text-5xl site-name">
-            <span className="text-[#be185d]">Play</span> Quiz
-          </h1>
+          <Link to="/">
+            <h1 className="text-5xl site-name">
+              <span className="text-[#be185d]">Play</span> Quiz
+            </h1>
+          </Link>
         </div>
         <div className={`nav-element ${showNavbar && "active"}`}>
           <NavLink to="/home">Home</NavLink>
