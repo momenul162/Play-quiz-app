@@ -6,8 +6,9 @@ const Statistics = () => {
   const topics = useLoaderData();
 
   return (
-    <div className="md:bg-sky-100 md:p-28 my-32 md:mx-16">
+    <div className="md:bg-sky-100 my-32 md:mx-16">
       <LineChart
+        className=""
         width={800}
         height={300}
         data={topics.data}

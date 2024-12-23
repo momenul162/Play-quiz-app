@@ -6,30 +6,44 @@ import linkedin from "../../images/linkedin.svg";
 
 const Footer = () => {
   return (
-    <>
-      <footer className="footer items-center p-4">
+    <div className="bg-slate-800">
+      <footer className="footer items-center p-4 container mx-auto">
         <aside className="text-center">
           <Link to="/">
-            <h1 className="text-4xl site-name">
+            <h1 className="text-4xl site-name text-white">
               <span className="text-[#be185d]">Play</span> Quiz
             </h1>
           </Link>
+          <p className="container mx-auto text-center text-lg text-white">A quiz test platform</p>
         </aside>
         <nav className="grid-flow-col gap-4 md:justify-self-end">
           <Link to="https://www.facebook.com">
-            <img style={{ height: "25px" }} src={facebook} alt="" />
+            <img
+              className="transition duration-300 ease-in-out transform hover:scale-110 h-10"
+              src={facebook}
+              alt=""
+            />
           </Link>
 
           <Link to="https://github.com">
-            <img style={{ height: "25px" }} src={github} alt="" />
+            <img
+              className="transition duration-300 ease-in-out transform hover:scale-110 h-10"
+              src={github}
+              alt=""
+            />
           </Link>
           <Link to="https://www.linkedin.com">
-            <img style={{ height: "25px" }} src={linkedin} alt="" />
+            <img
+              className="transition duration-300 ease-in-out transform hover:scale-110 h-10"
+              src={linkedin}
+              alt=""
+            />
           </Link>
         </nav>
       </footer>
-      <p className="text-center text-sm">Copyright © 2024 - All right reserved</p>
-    </>
+      <div className="divider"></div>
+      <p className="text-center text-sm text-white pb-3">Copyright © 2024 - All right reserved</p>
+    </div>
   );
 };
 

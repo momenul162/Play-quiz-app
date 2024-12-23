@@ -39,8 +39,8 @@ const Quiz = ({ quizs }) => {
   };
 
   return (
-    <div>
-      <p className="text-3xl text-sky-400 my-4 text-center font-bold">
+    <div className="container mx-auto">
+      <p className="text-5xl text-sky-400 my-4 text-center font-semibold">
         Quiz of <span className="text-purple-600">{name}</span>
       </p>
       {questions.map((quiz, index) => (

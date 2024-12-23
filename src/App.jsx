@@ -18,11 +18,6 @@ function App() {
           element: <Home></Home>,
         },
         {
-          path: "home",
-          loader: () => fetch("https://openapi.programming-hero.com/api/quiz"),
-          element: <Home></Home>,
-        },
-        {
           path: "statistics",
           loader: () => fetch("https://openapi.programming-hero.com/api/quiz"),
           element: <Statistics></Statistics>,
@@ -41,7 +36,7 @@ function App() {
     },
   ]);
   return (
-    <div className="App container md:mx-auto">
+    <div className="App">
       <RouterProvider router={router}></RouterProvider>
     </div>
   );

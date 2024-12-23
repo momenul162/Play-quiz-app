@@ -3,7 +3,7 @@ import Option from "./Option/Option";
 
 const Question = ({ quiz, index, rightAns, userAnswerHandler }) => {
   return (
-    <section className="shadow-lg my-4 py-4">
+    <section className="shadow-sm my-4 py-4">
       <div className="flex mx-2">
         <p className="text-xl font-bold">{index + 1}.</p>
         <p className="text-2xl md-mx-24">{quiz.question}</p>
